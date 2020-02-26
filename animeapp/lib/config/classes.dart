@@ -1,3 +1,4 @@
+import 'package:flutter/material.dart';
 class Latest {
   String id;
   String id_api;
@@ -44,3 +45,28 @@ class LatestManager {
   }
 }
 
+class Anime {
+  String name, banner, cover, desc, startDate, status, type,score;
+  List<String> genres;
+  List<Episode> episodes;
+  Anime({
+    @required this.name,
+    @required this.banner,
+    @required this.cover,
+    @required this.desc,
+    @required this.status,
+    @required this.startDate,
+    @required this.type,
+    @required this.genres,
+    @required this.episodes,
+    @required this.score,
+  });
+}
+class Episode {
+  String episode;
+  List<String> links;
+  Episode({
+    @required this.episode,
+    @required this.links,
+  });
+}

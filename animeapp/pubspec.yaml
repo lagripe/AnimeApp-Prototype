@@ -24,6 +24,8 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^0.1.2
+  material_design_icons_flutter:
+  double_back_to_close_app: ^0.1.1
 
 dev_dependencies:
   flutter_test:
@@ -48,6 +50,7 @@ flutter:
   assets:
     - assets/img/dash_background.jpg
     - assets/img/favcion.png
+    - assets/img/play.png
   fonts:
       - family: Roboto
         fonts:
@@ -55,6 +58,9 @@ flutter:
       - family: Open-Sans
         fonts:
           - asset: assets/fonts/open-sans-regular.ttf
+      - family: MyriadPro
+        fonts:
+          - asset: assets/fonts/MyriadPro-Regular.otf
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
 

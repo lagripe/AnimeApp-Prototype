@@ -41,7 +41,7 @@ class _DetailsState extends State<Details> with TickerProviderStateMixin {
           Stack(
             children: <Widget>[
               Container(
-                height: MediaQuery.of(context).size.height / 3,
+                height: MediaQuery.of(context).size.height / 2,
                 width: double.infinity,
                 child: Image(
                   image: NetworkImage(anime.banner),
@@ -91,7 +91,7 @@ class _DetailsState extends State<Details> with TickerProviderStateMixin {
           _current_index == 0
               ? getInfo(anime)
               : Container(
-                  height: 600,
+                  height: MediaQuery.of(context).size.height / 2 - 50,
                   child: getEpisodes(anime),
                 )
         ],
@@ -174,6 +174,7 @@ class _DetailsState extends State<Details> with TickerProviderStateMixin {
 
   Widget getEpisodes(Anime anime) {
     return GridView.count(
+      physics:  ScrollPhysics(),
       crossAxisCount: 4,
       children: List.generate(anime.episodes.length, (index) {
         return Card(
